@@ -18,4 +18,4 @@ print(f"{a[2]} is the third character of input")
 if len(a) > 10:
     print(f"{a[10]} is the eleventh character of input")
 else:
-    print("Insufficient characters")
+    print("Insufficient characters for 11th character")
