@@ -3,4 +3,4 @@ number = in_put.split(",")
 print(number)
 
 for i in number:
-    print(i.strip())
+    print(i.strip(","))
