@@ -85,3 +85,5 @@ while True:
         index = g_all[0]
         character = g_all[1]
         word_set = not_green_filter(word_set=word_set, index=index, not_green_char=character)
+
+print(word_set)

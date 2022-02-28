@@ -6,7 +6,7 @@ import nltk
 nltk.download('words')
 word_set = words.words()
 
-# word_set = {'apple', 'appie', 'alpha', 'rough', 'cough', 'tough'}
+# this is a test case: word_set = {'apple', 'appie', 'alpha', 'rough', 'cough', 'tough'}
 
 
 def green_filter(word_set, index, character):
