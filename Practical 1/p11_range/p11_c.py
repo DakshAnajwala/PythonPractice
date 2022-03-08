@@ -1,4 +1,4 @@
-#print 0< print <num
+# print 0< print <num
 num = int(input("Enter a number "))
 
 print("print 0< print <num")

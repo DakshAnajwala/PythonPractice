@@ -1,10 +1,24 @@
-# from english_words import english_words_lower_alpha_set
 # word_set = english_words_lower_alpha_set
+from english_words import english_words_lower_alpha_set
 from nltk.corpus import words
 import nltk
 
 nltk.download('words')
 word_set = words.words()
+all_words = set()
+for w in word_set:
+    all_words.add(w)
+
+for w in english_words_lower_alpha_set:
+    all_words.add(w)
+# all_words = english_words_lower_alpha_set.union(words)
+wordle_words = set()
+
+for s in all_words:
+    if len(s) == 5:
+        wordle_words.add(s.lower())
+
+word_set = wordle_words
 
 # this is a test case: word_set = {'apple', 'appie', 'alpha', 'rough', 'cough', 'tough'}
 
@@ -44,13 +58,7 @@ def not_green_filter(word_set, index, not_green_char):
             filtered_word_set.add(word)
     return filtered_word_set
 
-wordle_words = set()
 
-for s in word_set:
-    if len(s) == 5:
-        wordle_words.add(s.lower())
-
-word_set = wordle_words
 while len(word_set) > 1:
     print("***** GREEN CHARACTERS *****")
     green_chars = {}
